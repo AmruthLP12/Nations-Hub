@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   return (
-    <Router basename="/Nations-Hub">
+    <Router basename="/">
       <div className="App">
         <Navbar />
         <Routes>

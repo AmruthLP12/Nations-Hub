@@ -1,0 +1,101 @@
+.filter-results-container {
+    height: 120px;
+    padding: 32px 40px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+.filter-input {
+    position: relative;
+}
+.filter-input input {
+    width: 440px;
+    height: 55px;
+    padding: 16px 12px 16px 45px;
+    font-size: 18px;
+    color: var(--text-color);
+    background-color: var(--nav-bg-color);
+    box-shadow: 2px 2px 2px var(--btn-hover), -2px -2px 2px var(--btn-hover), 2px -2px 2px var(--btn-hover), -2px 2px 2px var(--btn-hover);
+    border: 1px solid transparent;
+    border-radius: 6px;
+    outline: transparent;
+    letter-spacing: .6px;
+}
+#searchIcon {
+    position: absolute;
+    top: 18px;
+    left: 14px;
+    color: var(--text-color);
+    font-size: 18px;
+}
+/* Style for the custom dropdown container */
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 10;
+}
+/* Style for the selected option */
+.selected-option {
+    width: 150px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--btn-hover);
+    background-color: var(--nav-bg-color);
+    box-shadow: 2px 2px 2px var(--btn-hover), -2px -2px 2px var(--btn-hover), 2px -2px 2px var(--btn-hover), -2px 2px 2px var(--btn-hover);
+    border-radius: 6px;
+    font-size: 16px;
+}
+/* Style for the options container */
+.options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+    border: 1px solid var(--btn-hover);
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    background-color: var(--nav-bg-color);
+    z-index: 1;
+}
+/* Style for each option in the dropdown */
+.options li {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+/* Hover effect for options */
+.options li:hover {
+   background-color: var(--bg-color);
+}
+/* Show the options when the dropdown is clicked */
+.custom-dropdown:hover .options {
+    display: block;
+}
+/* Style for the selected option when the dropdown is open */
+.custom-dropdown:hover .selected-option {
+    border-radius: 6px 6px 0 0;
+    border-bottom: none;
+}
+/* Responsive */
+@media screen and (max-width: 678px) {
+    .filter-results-container {
+        height: auto;
+        padding: 40px 16px;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .filter-input, .filter-input input {
+        width: 100%;
+    }
+}

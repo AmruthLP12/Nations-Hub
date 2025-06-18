@@ -12,7 +12,7 @@ function Fetch() {
   useEffect(() => {
     let isMounted = true;
 
-    fetch("https://restcountries.com/v3.1/all")
+    fetch("https://restcountries.com/v3.1/all?fields=name,flags")
       .then((response) => {
         if (!response.ok)
           throw new Error(`HTTP error! Status: ${response.status}`);

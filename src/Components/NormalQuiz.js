@@ -200,7 +200,7 @@ function NormalQuiz({ quizType: quizTypeProp }) {
   }
 
   return (
-    <div style={{ minHeight: '100vh', padding: 20, backgroundColor: 'var(--bg-color)', color: 'var(--text-color)', display: 'flex', justifyContent: 'center' }}>
+    <div style={{ minHeight: '70vh', padding: 20, backgroundColor: 'var(--bg-color)', color: 'var(--text-color)', display: 'flex', justifyContent: 'center' }}>
       <div style={{ height:'100%', width: '100%', maxWidth: 500, backgroundColor: 'var(--nav-bg-color)', borderRadius: 16, padding: 24, boxShadow: '0 4px 24px var(--nav-shadow-color)' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 10 }}>
           <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>

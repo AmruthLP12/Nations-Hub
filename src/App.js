@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
 import CountryDetails from "./Pages/CountryDetails";
 import Quiz from "./Pages/Quiz";
@@ -27,6 +28,7 @@ function App() {
           <Route path="/quiz" element={<Quiz />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

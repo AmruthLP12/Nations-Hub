@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../Styles/Fetch.css";
 import { FaMapMarkedAlt, FaGlobeAmericas, FaMap, FaLandmark, FaMoneyBillWave, FaLanguage } from "react-icons/fa";
+import NormalQuiz from "../Components/NormalQuiz";
 
 const quizTypes = [
   {
@@ -50,18 +51,16 @@ function Quiz() {
     setSelectedQuiz(key);
   };
 
-  const renderQuizComponent = () => {
-    return (
-      <div style={{ minHeight: "400px", display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <h2 style={{ color: "var(--text-color)" }}>Quiz coming soon...</h2>
-      </div>
-    );
-  };
-
-  if (selectedQuiz) return renderQuizComponent();
+  // Render Normal_Quiz with the selected quiz type as a prop
+  if (
+    selectedQuiz &&
+    ["region", "sub-region", "capital", "currencies", "languages"].includes(selectedQuiz)
+  ) {
+    return <NormalQuiz quizType={selectedQuiz} />;
+  }
 
   return (
-    <section className="main-body-section" style={{ minHeight: "80vh" }}>
+    <section className="main-body-section" style={{ height: "100%" }}>
       <div className="main-body-container" style={{ flexDirection: "column", gap: "48px", width: "100%" }}>
         {/* Main unique quiz card */}
         <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
@@ -103,7 +102,7 @@ function Quiz() {
                 width: 300,
                 minHeight: 150,
                 background: "var(--bg-color)",
-                color:"var(--text-color)",
+                color: "var(--text-color)",
                 border: "2px solid #fdd835",
                 borderRadius: 14,
                 cursor: "pointer",

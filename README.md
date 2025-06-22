@@ -72,7 +72,7 @@ The application should now be running on `http://localhost:3000`.
 
 ## 🌐 Live Demo
 
-Check out the live demo of [Nations Hub](https://nation-hub-phi.vercel.app) to explore the features.
+Check out the live demo of [Nations Hub](https://nations-hub-phi.vercel.app) to explore the features.
 
 ## 📸 Screenshots
 

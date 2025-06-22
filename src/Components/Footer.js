@@ -33,7 +33,7 @@ const Footer = () => {
         </span>
       </div>
       <button
-        class="button"
+        className="button"
         onClick={() => {
           const windosw = window.open(
             "https://github.com/Sanskargupta0/Nations-Hub",
@@ -54,7 +54,7 @@ const Footer = () => {
             fill="white"
           ></path>
         </svg>
-        <p class="text">Click me</p>
+        <p className="text">Click me</p>
       </button>
     </footer>
   );

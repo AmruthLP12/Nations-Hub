@@ -1,31 +1,100 @@
-# Nations Hub
+# 🌍 Nations Hub &middot; [![Author Sanskar Gupta](https://img.shields.io/badge/Author-Sanskar-%3C%3E)](https://github.com/Sanskargupta0)
 
-Welcome to Nations Hub! This application allows users to explore information about all countries on Earth, providing a rich and interactive experience. Whether you're looking for general country information, detailed statistics, or just want to admire the flags of different nations, Nations Hub has got you covered.
+Welcome to Nations Hub! 🎉 Explore information about every country on Earth with our rich interactive experience. Discover stats, flags, and challenge yourself with geography games! 🌎✨
 
-## Features
+## ✨ Features
 
-- **Country Information:** Get detailed information about any country, including its population, area, capital, languages spoken, currency, and more.
-- **Flag Gallery:** Admire the flags of different nations with our comprehensive flag gallery feature.
-- **Search Functionality:** Easily find specific countries using the search functionality.
-- **Responsive Design:** Nations Hub is designed to work seamlessly across all devices, from desktops to smartphones.
+- **📚 Country Information:** Detailed stats including population, area, capital, languages, currency
+- **🎌 Flag Gallery:** Comprehensive collection of national flags
+- **🔍 Search Functionality:** Instantly find any country
+- **🎮 Interactive Quiz Games:**
+  - **🧭 Reach the Country:** Navigate through neighboring borders
+  - **🗺️ Region Quiz:** Test your regional knowledge
+  - **🌏 Sub-Region Quiz:** Match countries to sub-regions
+  - **🏛️ Capital Quiz:** Identify countries by capitals
+  - **💱 Currencies Quiz:** Match currencies to countries
+  - **🗣️ Languages Quiz:** Identify official languages
+- **📱 Responsive Design:** Works perfectly on all devices
 
-## Technologies Used
+## ⚙️ Tech Stack
 
 - React.js
 - HTML5
 - CSS3
 - JavaScript
-- [REST Countries API](https://restcountries.com/) for country data
+- [REST Countries API](https://restcountries.com/)
 
-## Getting Started
+## 🎮 Game Descriptions
 
-To get started with Nations Hub, follow these steps:
+### 🧭 Reach the Country
+Start from a country and reach the destination through neighboring borders!  
+![Reach the Country Game](/screenshots/reach-country.png)
 
-1. Clone this repository to your local machine.
-2. Navigate to the project directory.
-3. Install dependencies using `npm install`.
-4. Start the development server with `npm start`.
-5. Open your browser and visit `http://localhost:3000` to view Nations Hub.
+### 🗺️ Region Quiz
+Test your knowledge of world regions  
+![Region Quiz](/screenshots/region-quiz.png)
+
+### 🌏 Sub-Region Quiz
+Match countries to their sub-regions  
+![Sub-Region Quiz](/screenshots/subregion-quiz.png)
+
+### 🏛️ Capital Quiz
+Identify countries by their capitals  
+![Capital Quiz](/screenshots/capital-quiz.png)
+
+### 💱 Currencies Quiz
+Match countries to their currencies  
+![Currencies Quiz](/screenshots/currency-quiz.png)
+
+### 🗣️ Languages Quiz
+Identify countries by official languages  
+![Languages Quiz](/screenshots/language-quiz.png)
+
+## 🚀 Getting Started
+
+Follow these steps to set up Nations Hub locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/Sanskargupta0/Nations-Hub.git
+
+# Navigate to project directory
+cd Nations-Hub
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+```
+
+The application should now be running on `http://localhost:3000`.
+
+## 🌐 Live Demo
+
+Check out the live demo of [Nations Hub](https://nation-hub-phi.vercel.app) to explore the features.
+
+## 📸 Screenshots
+
+### Country Information Page
+
+![Country Information Page](/screenshots/country-info.png)
+
+### Flag Gallery
+
+![Flag Gallery](/screenshots/flag-gallery.png)
+
+### Quiz Page
+
+![Quiz Page](/screenshots/quiz-page.png)
+
+### Reach the Country Game
+
+![Reach the Country Game](/screenshots/reach-the-country.png)
+
+### Normal Quiz
+
+![Normal Quiz](/screenshots/normal-quiz.png)
 
 ## Contributing
 
@@ -44,4 +113,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Have any questions or suggestions? Feel free to contact us at [amruthgowd91200@gmail.com](mailto:amruthgowd91200@gmail.com).
+Have any questions or suggestions? Feel free to contact us at [sanskar362002@gmail.com](mailto:sanskar362002@gmail.com).

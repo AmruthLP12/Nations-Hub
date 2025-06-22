@@ -43,7 +43,7 @@ function SpecialQuiz() {
   const [shortestPath, setShortestPath] = useState([]);
   const [showShortest, setShowShortest] = useState(false);
   const [animating, setAnimating] = useState(false);
-  const [highScore, setHighScore] = useState(parseInt(localStorage.getItem("specialquiz_highscore") || "0", 10));
+  const [highScore, setHighScore] = useState(parseInt(localStorage.getItem(`specialquiz_highscore_of_${start?.cca3}_${end?.cca3}`) || "0", 10));
 
   // Animation state
   const [animationFrom, setAnimationFrom] = useState(null);
@@ -84,6 +84,7 @@ function SpecialQuiz() {
     setShowResult(false);
     setShortestPath([]);
     setShowShortest(false);
+    setHighScore(parseInt(localStorage.getItem(`specialquiz_highscore_of_${s.cca3}_${e.cca3}`) || "0", 10));
   }
 
   function resetStats() {
@@ -128,7 +129,7 @@ function SpecialQuiz() {
         // High score: fewer hops is better
         if (highScore === 0 || hops + 1 < highScore) {
           setHighScore(hops + 1);
-          localStorage.setItem("specialquiz_highscore", hops + 1);
+          localStorage.setItem(`specialquiz_highscore_of_${start?.cca3}_${end?.cca3}`, hops + 1);
         }
         toast.success("You reached the destination!", { icon: <FaCheckCircle color="#4caf50" /> });
       } else {

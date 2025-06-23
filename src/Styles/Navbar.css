@@ -1,47 +1,120 @@
 .navbar-section {
-    height: 80px;
-    padding: 0 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--text-color);
-    background-color: var(--nav-bg-color);
+  height: 80px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-color);
+  background-color: var(--nav-bg-color);
 }
 .navbar-title {
-    letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 .navbar-title a {
-    text-decoration: none;
-    color: var(--text-color);
+  text-decoration: none;
+  color: var(--text-color);
 }
 .navbar-btn {
-    padding: 10px 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    outline: transparent;
-    color: var(--text-color);
-    background-color: var(--nav-bg-color);
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: .4px;
-    cursor: pointer;
+  padding: 10px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  outline: transparent;
+  color: var(--text-color);
+  background-color: var(--nav-bg-color);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  cursor: pointer;
 }
 .navbar-btn:hover {
-    background-color: var(--btn-hover);
+  background-color: var(--btn-hover);
 }
+
+.navbar-container {
+  display: flex;
+  gap: 2rem;
+
+  @media screen and (max-width: 678px) {
+    gap: 10px;
+  }
+}
+
+.link {
+    text-decoration: none;
+}
+
+.Quiz-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+    color: white;
+    text-shadow: 2px 2px rgb(116, 116, 116);
+    text-transform: uppercase;
+    cursor: pointer;
+    border: solid 2px black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: hsl(49deg 98% 60%);
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+
+  .Quiz-btn:active {
+    transform: scale(0.9);
+    transition: all 100ms ease;
+  }
+
+  .Quiz-btn svg {
+    transition: all 0.5s ease;
+    z-index: 2;
+  }
+
+  .play {
+    transition: all 0.5s ease;
+    transition-delay: 300ms;
+  }
+
+  .Quiz-btn:hover svg {
+    transform: scale(3) translate(50%);
+  }
+
+  .now {
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    z-index: 2;
+  }
+
+  .Quiz-btn:hover .now {
+    transform: translateX(10px);
+    transition-delay: 300ms;
+  }
+
+  .Quiz-btn:hover .play {
+    transform: translateX(200%);
+    transition-delay: 300ms;
+  }
+
+
 /* Responsive */
 @media screen and (max-width: 678px) {
-    .navbar-section {
-        padding: 0 16px;
-    }
-    .navbar-title {
-        font-size: 16px;
-    }
-    .navbar-btn {
-        font-size: 14px;
-    }
+  .navbar-section {
+    padding: 0 16px;
+  }
+  .navbar-title {
+    font-size: 16px;
+  }
+  .navbar-btn {
+    font-size: 14px;
+  }
 }

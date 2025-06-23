@@ -1,0 +1,50 @@
+footer {
+  @media screen and (max-width: 678px) {
+   flex-Direction: column;
+   gap:10px
+  }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 40px;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: #181717;
+    outline: 3px #181717 solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+    @media screen and (max-width: 678px) {
+      position: relative;
+      right:0px;
+    }
+  }
+  
+  .button .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+  }
+  
+  .button svg path {
+    transition: 400ms;
+  }
+  
+  .button:hover {
+    background-color: transparent;
+  }
+  
+  .button:hover .text {
+    color: #181717;
+  }
+  
+  .button:hover svg path {
+    fill: #181717;
+  }

@@ -1,4 +1,4 @@
-# 🌍 Nations Hub &middot; [![Author Sanskar Gupta](https://img.shields.io/badge/Author-Sanskar-%3C%3E)](https://github.com/Sanskargupta0)
+# 🌍 Nations Hub &middot; [![Author Amruth L P](https://img.shields.io/badge/Author-Amruth-%3C%3E)](https://github.com/amruthlp12)
 
 Welcome to Nations Hub! 🎉 Explore information about every country on Earth with our rich interactive experience. Discover stats, flags, and challenge yourself with geography games! 🌎✨
 
@@ -56,7 +56,7 @@ Follow these steps to set up Nations Hub locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/Sanskargupta0/Nations-Hub.git
+git clone https://github.com/amruthlp12/Nations-Hub.git
 
 # Navigate to project directory
 cd Nations-Hub
@@ -72,7 +72,7 @@ The application should now be running on `http://localhost:3000`.
 
 ## 🌐 Live Demo
 
-Check out the live demo of [Nations Hub](https://nations-hub-phi.vercel.app) to explore the features.
+Check out the live demo of [Nations Hub](https://nations-hub.vercel.app/) to explore the features.
 
 ## 📸 Screenshots
 
@@ -107,10 +107,22 @@ Contributions are welcome! If you'd like to contribute to Nations Hub, please fo
 5. Push to the branch (`git push origin feature/new-feature`).
 6. Create a new Pull Request.
 
+## 👥 Contributors
+
+- [@amruthlp12](https://github.com/amruthlp12) - Creator & Maintainer  
+- [@Sanskargupta0](https://github.com/Sanskargupta0) - Quiz Game Features
+
+
+## 🙏 Special Thanks
+
+A big shoutout to [@Sanskargupta0](https://github.com/Sanskargupta0) for enhancing *Nations Hub* with engaging geography quizzes! 🧠🌍  
+Your contributions made the app far more interactive and educational — we appreciate your awesome work! 💪✨
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-Have any questions or suggestions? Feel free to contact us at [sanskar362002@gmail.com](mailto:sanskar362002@gmail.com).
+Have any questions or suggestions? Feel free to contact us at [amruthlp12@gmail.com](mailto:amruthlp12@gmail.com).
